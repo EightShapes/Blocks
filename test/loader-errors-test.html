@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Blocks Loader Test - Jasmine Spec Runner v2.0.0</title>
+
+  <link rel="shortcut icon" type="image/png" href="lib/jasmine-2.0.0/jasmine_favicon.png">
+  <link rel="stylesheet" type="text/css" href="lib/jasmine-2.0.0/jasmine.css">
+
+  <script type="text/javascript" src="lib/jasmine-2.0.0/jasmine.js"></script>
+  <script type="text/javascript" src="lib/jasmine-2.0.0/jasmine-html.js"></script>
+  <script type="text/javascript" src="lib/jasmine-2.0.0/boot.js"></script>
+
+  <!-- include source files here... -->
+  <!-- script src="../jspm_packages/system.js"></script>
+  <script src="config.js"></script>
+  <script>
+    System.import('../src/blocks-loader');
+  </script -->
+
+  <script type="text/javascript" src="../dist/blocks-loader.min.js"></script>
+  <script type="text/javascript" src="lib/jasmine-jquery.js"></script>
+
+  <!-- include spec files here... -->
+  <script type="text/javascript" src="spec/loader/loader-errors-tests.js"></script>
+</head>
+
+<body>
+  <div id="base">
+
+    <!-- This tests error message for a component that doesn't exist -->
+    <div data-component="not-a-real-component" data-variation="not-a-real-variation"></div>
+
+  </div>
+</body>
+</html>

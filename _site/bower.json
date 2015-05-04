@@ -1,0 +1,38 @@
+{
+  "name": "EightShapes-Blocks",
+  "version": "2.3.8",
+  "homepage": "https://github.com/EightShapes/Blocks",
+  "authors": [
+    "Nathan Curtis <nathan@eightshapes.com>",
+    "Matthew Dingee <matthew@eightshapes.com>",
+    "Kevin Powell <kevin@eightshapes.com>"
+  ],
+  "description": "EightShapes Blocks is a toolkit to organize, annotate, and modularize HTML prototypes.",
+  "main": "jquery.8SblocksLoader.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "prototype",
+    "Blocks",
+    "EightShapes",
+    "design",
+    "HTML",
+    "CSS",
+    "tool",
+    "framework"
+  ],
+  "license": "http://unify.eightshapes.com/about-the-system/terms-of-use/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "underscore": "~1.6.0",
+    "handlebars": "~1.3.0"
+  }
+}

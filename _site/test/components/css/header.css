@@ -1,0 +1,607 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/base\/_typography\.scss}line{font-family:\0000365}}
+.type-XXL {
+  font-family: "Agenda-Light", Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/base\/_typography\.scss}line{font-family:\0000368}}
+.type-XL {
+  font-family: "Agenda-Light", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 28px;
+  margin-bottom: 12px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/base\/_typography\.scss}line{font-family:\0000371}}
+.type-L {
+  font-family: "Agenda-Light", Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  line-height: 21px;
+  margin-bottom: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/base\/_typography\.scss}line{font-family:\0000374}}
+.type-M {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 8px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/base\/_typography\.scss}line{font-family:\0000377}}
+.type-S {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 6px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/base\/_typography\.scss}line{font-family:\0000380}}
+.type-XS {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 11px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/base\/_typography\.scss}line{font-family:\0000365}}
+.type-XXL {
+  font-family: "Agenda-Light", Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/base\/_typography\.scss}line{font-family:\0000368}}
+.type-XL {
+  font-family: "Agenda-Light", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 28px;
+  margin-bottom: 12px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/base\/_typography\.scss}line{font-family:\0000371}}
+.type-L {
+  font-family: "Agenda-Light", Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  line-height: 21px;
+  margin-bottom: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/base\/_typography\.scss}line{font-family:\0000374}}
+.type-M {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 8px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/base\/_typography\.scss}line{font-family:\0000377}}
+.type-S {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 6px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/base\/_typography\.scss}line{font-family:\0000380}}
+.type-XS {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 11px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\000034}}
+.header-strip {
+  *zoom: 1;
+  position: absolute;
+  left: -888em;
+  padding-top: 15px;
+  border-bottom: 1px solid #e6e6e6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/base\/_functions\.scss}line{font-family:\0000319}}
+.header-strip:before, .header-strip:after {
+  content: "";
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/base\/_functions\.scss}line{font-family:\0000323}}
+.header-strip:after {
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\0000310}}
+.header-strip li {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\0000313}}
+.header-strip a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\0000318}}
+.header-strip a:focus {
+  color: #fff;
+  background-color: #00a4e3;
+  text-decoration: none;
+  outline: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\0000326}}
+.header-strip a:active {
+  color: #fff;
+  background-color: #007fb0;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\0000332}}
+.header-strip .hd-login {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\0000334}}
+.header-strip .hd-login a {
+  border-left: 1px solid #e6e6e6;
+  color: #00a4e3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\0000337}}
+.header-strip .hd-login a:focus {
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\0000340}}
+.header-strip .hd-login a:active {
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\0000346}}
+.header-brand {
+  position: relative;
+  padding: 15px 20px 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\0000349}}
+.header-brand .off-canvas-toggle {
+  display: none;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\0000352}}
+.js .header-brand .off-canvas-toggle {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\0000356}}
+.header-brand .logo {
+  text-align: center;
+  margin-bottom: 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\0000359}}
+.js .header-brand .logo {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\0000362}}
+.header-brand .logo img {
+  width: 124px;
+  height: auto;
+  -webkit-transition: width 0.2s ease-out;
+  -moz-transition: width 0.2s ease-out;
+  -o-transition: width 0.2s ease-out;
+  transition: width 0.2s ease-out;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\0000372}}
+.header-brand .logo.roster img {
+  width: auto;
+  margin-left: 3.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\0000378}}
+.js .header-brand .search {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\0000381}}
+.header-brand .search fieldset {
+  position: relative;
+  padding-right: 40px;
+  background-color: #eeeae3 !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\0000386}}
+.js .header-brand .search fieldset {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\0000389}}
+.header-brand .search fieldset label {
+  /* Accessible hide */
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003103}}
+.header-brand .search-toggle {
+  display: none;
+  margin: 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003105}}
+.js .header-brand .search-toggle {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003111}}
+.header-brand .search-toggle-target {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #eeeae3 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0RUFBODlDQzY4QzgxMUUyODcwRDg1N0VGREE2OEU3OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0RUFBODlDRDY4QzgxMUUyODcwRDg1N0VGREE2OEU3OSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjRFMzc3ODA5NjhCQTExRTI4NzBEODU3RUZEQTY4RTc5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjRFMzc3ODBBNjhCQTExRTI4NzBEODU3RUZEQTY4RTc5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+1swITQAAAV9JREFUeNqklC1vwzAQht1qyDSFKw1t6fwbOjjcokilwYPTYGmVoBWXFhd2tDShGS0N3nl6Pd0ul+WjJ72K7Zwfn88+T7IsM4o50oIUkyzGbqSC9Ekqg2OSJI3JD6LvIRtShH7NADEWcxj7wEL/Qr3zGu0L6UyqhP+StMICr6Sd4mOmLIo1ItuTDpoz2ZX0hkV9WrZ5nts26AbfIyZ22QFgn6YXDerw8wL1tSNy6ijaSEIXaJ/NMKtxE0Ku/0BjOFRmuBX4PkqoT/SXGWfhus20gxprVhucItnxSGjYdiWhhZbsnvYk0vALDSe4GgiMcB1rqv+rhJbQnJVpn1xu0T61VdQe1yrUv+2IMEUQja1zaI3H4Qawfyye2QFa9j68M6C3lCqK981EvKcWtew6KumECFPM+QmKcltpUL7FJa7MjF2bUjw4cw3cBh1iDfC9FWWw5R2AHpzeDVXA5bcAAwB2o2Ai69SfQgAAAABJRU5ErkJggg==) no-repeat center center;
+  font: 0/0 a;
+  color: transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003118}}
+.header-brand .search-toggle-target:active {
+  background-color: #dbd9d1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003122}}
+.header-brand .search-submit {
+  font: 0/0 a;
+  color: transparent;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: #00a4e3 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAALCAYAAACzkJeoAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0RTM3NzgwNzY4QkExMUUyODcwRDg1N0VGREE2OEU3OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0RTM3NzgwODY4QkExMUUyODcwRDg1N0VGREE2OEU3OSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjRFMzc3ODA1NjhCQTExRTI4NzBEODU3RUZEQTY4RTc5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjRFMzc3ODA2NjhCQTExRTI4NzBEODU3RUZEQTY4RTc5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+ZGORLgAAAHxJREFUeNpirLv8gYOBgWENECcD8UsGJMAExIVA7A3E+4BYHF0yBsrWQlfABNV1D5sCkOQDILYD4pvoCpigAk+BOByI/yMpaIdJSgDxciBmhPKvA3ElSFISiPcDsSaShCPIWyDJ7UCsgS4Bc9B6bBIwyU4g3oYuAQIAAQYAuOIcWA9AXnoAAAAASUVORK5CYII=) no-repeat center center;
+  border: 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003131}}
+.header-brand .search-submit:active {
+  background-color: #007fb0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003135}}
+.header-brand .search-submit:focus, .header-brand .search-submit:hover {
+  background-color: #0099d4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003141}}
+.header-brand.is-searching .off-canvas,
+.header-brand.is-searching .logo {
+  visibility: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003144}}
+.header-brand.is-searching .search {
+  left: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003147}}
+.header-brand.is-searching .search fieldset {
+  display: block;
+  margin-right: 50px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003151}}
+.header-brand.is-searching .search-toggle-target {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARCAYAAAACCvahAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0RUFBODlEMDY4QzgxMUUyODcwRDg1N0VGREE2OEU3OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0RUFBODlEMTY4QzgxMUUyODcwRDg1N0VGREE2OEU3OSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjRFQUE4OUNFNjhDODExRTI4NzBEODU3RUZEQTY4RTc5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjRFQUE4OUNGNjhDODExRTI4NzBEODU3RUZEQTY4RTc5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+9e2rngAAAORJREFUeNqMkzEOgzAMRU26MXdi6UrnTD1Bdw7BTA/RnRUOwd5D5Agdunfp0oUBviunSisnwdKXA/j9WEamZVloGIaS81b5+l1VVQciujjn7tbaF2ViHMdvvcGhhvZQJx9yYCf1tWnb9obDBJUpgwDkuok5vplyBhrI740viBnEQI6Cp/Z3yxmpgd5QHwNVWDFQwZ+2w5BCJ6DTwCgsN1voyVme83DQ8gO6Sm40A5MAe7Trh6YamAxIKQOTAoMBqga8GEnQB5ZmxjLwHzhCJxxnI1NNgpEObMG7GXzYFGj7w6wCDADhbrp5Kz905QAAAABJRU5ErkJggg==);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003156}}
+#searchbox {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  box-shadow: none;
+  height: 40px;
+  padding-left: 10px;
+  font-family: "Agenda-Light", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003165}}
+#searchbox:active {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003168}}
+#searchbox:focus {
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003174}}
+.header-nav {
+  background-color: #00a4e3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003176}}
+.header-nav > ul > li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003180}}
+.js .header-nav {
+  width: 18em;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: -18em;
+  z-index: 0;
+  box-shadow: -7px 0 15px -7px rgba(0, 0, 0, 0.25) inset;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003188}}
+.level-two_toggle {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  display: none;
+  background: #0087ba url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAALCAYAAABcUvyWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1N0Q1Q0M3OTczMEIxMUUyQUM4OEUxM0FEODU4RUNBRSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1N0Q1Q0M3QTczMEIxMUUyQUM4OEUxM0FEODU4RUNBRSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU3RDVDQzc3NzMwQjExRTJBQzg4RTEzQUQ4NThFQ0FFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3RDVDQzc4NzMwQjExRTJBQzg4RTEzQUQ4NThFQ0FFIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+8nEOrQAAAD1JREFUeNpi+P//fwMQM6BjJgYIaGBAA0xI7AZcEiBQg0uCBaYTXQIGanFJNGOTwGpUM7JleJ2L4UGAAAMAX/QXiGGnKP4AAAAASUVORK5CYII=) no-repeat 15px 15px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 35px;
+  font: 0/0 a;
+  color: transparent;
+  border: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003202}}
+.js .level-two_toggle {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003205}}
+.is-toggled .level-two_toggle {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAGCAYAAAAVMmT4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1N0Q1Q0M3RDczMEIxMUUyQUM4OEUxM0FEODU4RUNBRSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1N0Q1Q0M3RTczMEIxMUUyQUM4OEUxM0FEODU4RUNBRSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU3RDVDQzdCNzMwQjExRTJBQzg4RTEzQUQ4NThFQ0FFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3RDVDQzdDNzMwQjExRTJBQzg4RTEzQUQ4NThFQ0FFIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+BvIclQAAADdJREFUeNpi/P//fwMDkYAJiIlV3MAEYxBSCDMZBpqxKPqDbBCy4r9YbGhB4QE9iA3XYhMHCDAAdogq41HaWk8AAAAASUVORK5CYII=);
+  background-position: 12px 18px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003210}}
+span.level-two_toggle {
+  background-image: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003213}}
+button.level-two_toggle {
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003216}}
+button.level-two_toggle:hover {
+  background-color: #006d97;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003220}}
+.level-one {
+  display: block;
+  text-decoration: none;
+  color: white;
+  line-height: 17.29px;
+  padding: 13px 10px 12px 45px;
+  position: relative;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003230}}
+a.level-one:hover {
+  background-color: #007fb0;
+  color: white;
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003235}}
+.level-two {
+  margin: -5px 0 5px 0;
+  z-index: 2;
+  border-top: 1px solid #00a4e3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003239}}
+.level-two a {
+  display: block;
+  color: white;
+  font-size: 16px;
+  line-height: 20.29px;
+  padding: 8px 10px 7px 45px;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003246}}
+.level-two a:hover {
+  background-color: #007fb0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003251}}
+.js .level-two {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003254}}
+.is-toggled .level-two {
+  display: block;
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003259}}
+.off-canvas {
+  width: 40px;
+  height: 40px;
+  background: #eeeae3 url(i/off-canvas.png) no-repeat center center;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003264}}
+.off-canvas:active {
+  background-color: #dbd9d1;
+}
+
+@media (min-width: 42em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003271}}
+  .header-strip {
+    position: static;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003274}}
+  .header-brand {
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003277}}
+  .header-brand .logo {
+    text-align: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003279}}
+  .header-brand .logo img {
+    width: 152px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003284}}
+  .header-brand .logo.roster img {
+    margin-left: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003288}}
+  .header-brand .search-toggle {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003292}}
+  .js .header-brand .search {
+    top: 30px;
+    width: 220px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003297}}
+  .js .header-brand .search fieldset {
+    display: block;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003303}}
+  .header-nav {
+    border-top: 0;
+    background-color: transparent;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003307}}
+  .header-nav > ul:before,
+  .header-nav > ul:after {
+    content: "";
+    display: table;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003311}}
+  .header-nav > ul:after {
+    clear: both;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003314}}
+  .header-nav > ul {
+    margin: 0 20px;
+    zoom: 1;
+    width: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003319}}
+  .header-nav > ul > li {
+    float: left;
+    width: 25%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003322}}
+  .lt-ie8 .header-nav > ul > li {
+    width: 24%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003326}}
+  .js .header-nav .other {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003329}}
+  .js .header-nav {
+    width: 100%;
+    position: static;
+    box-shadow: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003336}}
+  .js .level-two_toggle {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003340}}
+  .level-one {
+    font-size: 17px;
+    font-family: "Agenda-Light", Arial, Helvetica, sans-serif;
+    border: 0;
+    text-align: center;
+    border-top: 1px solid #cccccc;
+    padding: 12px 8px;
+    font-weight: bold;
+    color: #666666;
+    font-weight: normal;
+    text-transform: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003352}}
+  a.level-one:hover {
+    background-color: transparent;
+    color: black;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003357}}
+  .is-toggled .level-two,
+  .no-js .level-two {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003360}}
+  .off-canvas {
+    display: none;
+  }
+}
+@media (min-width: 60em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003366}}
+  .header-brand {
+    padding-top: 25px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003369}}
+  .header-brand .logo img {
+    width: 182px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003374}}
+  .js .header-brand .search {
+    width: 310px;
+    top: 40px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003381}}
+  .header-nav > ul {
+    display: table;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003387}}
+  .header-nav > ul > li {
+    float: none;
+    width: auto;
+    display: table-cell;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003391}}
+  .lt-ie8 .header-nav > ul > li {
+    display: block;
+    float: left;
+    width: 120px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003398}}
+  .level-one {
+    font-size: 16px;
+    text-align: left;
+    border: 0;
+    padding-right: 5px;
+    font-weight: normal;
+    text-transform: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/prototypes\/ncarb-roster\/components\/sass\/header\.scss}line{font-family:\00003406}}
+  .level-one:hover::before {
+    content: '';
+    background-color: #00a4e3;
+    position: absolute;
+    top: -2px;
+    right: 14px;
+    left: 8px;
+    height: 6px;
+  }
+}
