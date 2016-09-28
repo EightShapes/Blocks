@@ -580,76 +580,6 @@ System.register("npm:core-js@0.9.6/library/modules/$.iter-call", ["npm:core-js@0
   return module.exports;
 });
 
-System.register("npm:core-js@0.9.6/library/modules/$.species", ["npm:core-js@0.9.6/library/modules/$", "npm:core-js@0.9.6/library/modules/$.wks"], true, function(require, exports, module) {
-  var global = System.global,
-      __define = global.define;
-  global.define = undefined;
-  var $ = require("npm:core-js@0.9.6/library/modules/$"),
-      SPECIES = require("npm:core-js@0.9.6/library/modules/$.wks")('species');
-  module.exports = function(C) {
-    if ($.DESC && !(SPECIES in C))
-      $.setDesc(C, SPECIES, {
-        configurable: true,
-        get: $.that
-      });
-  };
-  global.define = __define;
-  return module.exports;
-});
-
-System.register("npm:core-js@0.9.6/library/modules/$.iter-detect", ["npm:core-js@0.9.6/library/modules/$.wks"], true, function(require, exports, module) {
-  var global = System.global,
-      __define = global.define;
-  global.define = undefined;
-  var SYMBOL_ITERATOR = require("npm:core-js@0.9.6/library/modules/$.wks")('iterator'),
-      SAFE_CLOSING = false;
-  try {
-    var riter = [7][SYMBOL_ITERATOR]();
-    riter['return'] = function() {
-      SAFE_CLOSING = true;
-    };
-    Array.from(riter, function() {
-      throw 2;
-    });
-  } catch (e) {}
-  module.exports = function(exec) {
-    if (!SAFE_CLOSING)
-      return false;
-    var safe = false;
-    try {
-      var arr = [7],
-          iter = arr[SYMBOL_ITERATOR]();
-      iter.next = function() {
-        safe = true;
-      };
-      arr[SYMBOL_ITERATOR] = function() {
-        return iter;
-      };
-      exec(arr);
-    } catch (e) {}
-    return safe;
-  };
-  global.define = __define;
-  return module.exports;
-});
-
-System.register("npm:core-js@0.9.6/library/modules/$.collection-to-json", ["npm:core-js@0.9.6/library/modules/$.def", "npm:core-js@0.9.6/library/modules/$.for-of"], true, function(require, exports, module) {
-  var global = System.global,
-      __define = global.define;
-  global.define = undefined;
-  var $def = require("npm:core-js@0.9.6/library/modules/$.def"),
-      forOf = require("npm:core-js@0.9.6/library/modules/$.for-of");
-  module.exports = function(NAME) {
-    $def($def.P, NAME, {toJSON: function toJSON() {
-        var arr = [];
-        forOf(this, false, arr.push, arr);
-        return arr;
-      }});
-  };
-  global.define = __define;
-  return module.exports;
-});
-
 System.register("npm:core-js@0.9.6/library/modules/$.set-proto", ["npm:core-js@0.9.6/library/modules/$", "npm:core-js@0.9.6/library/modules/$.assert", "npm:core-js@0.9.6/library/modules/$.ctx"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
@@ -678,6 +608,23 @@ System.register("npm:core-js@0.9.6/library/modules/$.set-proto", ["npm:core-js@0
       };
     }() : undefined),
     check: check
+  };
+  global.define = __define;
+  return module.exports;
+});
+
+System.register("npm:core-js@0.9.6/library/modules/$.species", ["npm:core-js@0.9.6/library/modules/$", "npm:core-js@0.9.6/library/modules/$.wks"], true, function(require, exports, module) {
+  var global = System.global,
+      __define = global.define;
+  global.define = undefined;
+  var $ = require("npm:core-js@0.9.6/library/modules/$"),
+      SPECIES = require("npm:core-js@0.9.6/library/modules/$.wks")('species');
+  module.exports = function(C) {
+    if ($.DESC && !(SPECIES in C))
+      $.setDesc(C, SPECIES, {
+        configurable: true,
+        get: $.that
+      });
   };
   global.define = __define;
   return module.exports;
@@ -780,6 +727,293 @@ System.register("npm:process@0.10.1/browser", [], true, function(require, export
   };
   process.umask = function() {
     return 0;
+  };
+  global.define = __define;
+  return module.exports;
+});
+
+System.register("npm:core-js@0.9.6/library/modules/$.iter-detect", ["npm:core-js@0.9.6/library/modules/$.wks"], true, function(require, exports, module) {
+  var global = System.global,
+      __define = global.define;
+  global.define = undefined;
+  var SYMBOL_ITERATOR = require("npm:core-js@0.9.6/library/modules/$.wks")('iterator'),
+      SAFE_CLOSING = false;
+  try {
+    var riter = [7][SYMBOL_ITERATOR]();
+    riter['return'] = function() {
+      SAFE_CLOSING = true;
+    };
+    Array.from(riter, function() {
+      throw 2;
+    });
+  } catch (e) {}
+  module.exports = function(exec) {
+    if (!SAFE_CLOSING)
+      return false;
+    var safe = false;
+    try {
+      var arr = [7],
+          iter = arr[SYMBOL_ITERATOR]();
+      iter.next = function() {
+        safe = true;
+      };
+      arr[SYMBOL_ITERATOR] = function() {
+        return iter;
+      };
+      exec(arr);
+    } catch (e) {}
+    return safe;
+  };
+  global.define = __define;
+  return module.exports;
+});
+
+System.register("npm:core-js@0.9.6/library/modules/$.collection-strong", ["npm:core-js@0.9.6/library/modules/$", "npm:core-js@0.9.6/library/modules/$.ctx", "npm:core-js@0.9.6/library/modules/$.uid", "npm:core-js@0.9.6/library/modules/$.assert", "npm:core-js@0.9.6/library/modules/$.for-of", "npm:core-js@0.9.6/library/modules/$.iter", "npm:core-js@0.9.6/library/modules/$.iter-define"], true, function(require, exports, module) {
+  var global = System.global,
+      __define = global.define;
+  global.define = undefined;
+  'use strict';
+  var $ = require("npm:core-js@0.9.6/library/modules/$"),
+      ctx = require("npm:core-js@0.9.6/library/modules/$.ctx"),
+      safe = require("npm:core-js@0.9.6/library/modules/$.uid").safe,
+      assert = require("npm:core-js@0.9.6/library/modules/$.assert"),
+      forOf = require("npm:core-js@0.9.6/library/modules/$.for-of"),
+      step = require("npm:core-js@0.9.6/library/modules/$.iter").step,
+      has = $.has,
+      set = $.set,
+      isObject = $.isObject,
+      hide = $.hide,
+      isFrozen = Object.isFrozen || $.core.Object.isFrozen,
+      ID = safe('id'),
+      O1 = safe('O1'),
+      LAST = safe('last'),
+      FIRST = safe('first'),
+      ITER = safe('iter'),
+      SIZE = $.DESC ? safe('size') : 'size',
+      id = 0;
+  function fastKey(it, create) {
+    if (!isObject(it))
+      return (typeof it == 'string' ? 'S' : 'P') + it;
+    if (isFrozen(it))
+      return 'F';
+    if (!has(it, ID)) {
+      if (!create)
+        return 'E';
+      hide(it, ID, ++id);
+    }
+    return 'O' + it[ID];
+  }
+  function getEntry(that, key) {
+    var index = fastKey(key),
+        entry;
+    if (index != 'F')
+      return that[O1][index];
+    for (entry = that[FIRST]; entry; entry = entry.n) {
+      if (entry.k == key)
+        return entry;
+    }
+  }
+  module.exports = {
+    getConstructor: function(NAME, IS_MAP, ADDER) {
+      function C() {
+        var that = assert.inst(this, C, NAME),
+            iterable = arguments[0];
+        set(that, O1, $.create(null));
+        set(that, SIZE, 0);
+        set(that, LAST, undefined);
+        set(that, FIRST, undefined);
+        if (iterable != undefined)
+          forOf(iterable, IS_MAP, that[ADDER], that);
+      }
+      $.mix(C.prototype, {
+        clear: function clear() {
+          for (var that = this,
+              data = that[O1],
+              entry = that[FIRST]; entry; entry = entry.n) {
+            entry.r = true;
+            if (entry.p)
+              entry.p = entry.p.n = undefined;
+            delete data[entry.i];
+          }
+          that[FIRST] = that[LAST] = undefined;
+          that[SIZE] = 0;
+        },
+        'delete': function(key) {
+          var that = this,
+              entry = getEntry(that, key);
+          if (entry) {
+            var next = entry.n,
+                prev = entry.p;
+            delete that[O1][entry.i];
+            entry.r = true;
+            if (prev)
+              prev.n = next;
+            if (next)
+              next.p = prev;
+            if (that[FIRST] == entry)
+              that[FIRST] = next;
+            if (that[LAST] == entry)
+              that[LAST] = prev;
+            that[SIZE]--;
+          }
+          return !!entry;
+        },
+        forEach: function forEach(callbackfn) {
+          var f = ctx(callbackfn, arguments[1], 3),
+              entry;
+          while (entry = entry ? entry.n : this[FIRST]) {
+            f(entry.v, entry.k, this);
+            while (entry && entry.r)
+              entry = entry.p;
+          }
+        },
+        has: function has(key) {
+          return !!getEntry(this, key);
+        }
+      });
+      if ($.DESC)
+        $.setDesc(C.prototype, 'size', {get: function() {
+            return assert.def(this[SIZE]);
+          }});
+      return C;
+    },
+    def: function(that, key, value) {
+      var entry = getEntry(that, key),
+          prev,
+          index;
+      if (entry) {
+        entry.v = value;
+      } else {
+        that[LAST] = entry = {
+          i: index = fastKey(key, true),
+          k: key,
+          v: value,
+          p: prev = that[LAST],
+          n: undefined,
+          r: false
+        };
+        if (!that[FIRST])
+          that[FIRST] = entry;
+        if (prev)
+          prev.n = entry;
+        that[SIZE]++;
+        if (index != 'F')
+          that[O1][index] = entry;
+      }
+      return that;
+    },
+    getEntry: getEntry,
+    setIter: function(C, NAME, IS_MAP) {
+      require("npm:core-js@0.9.6/library/modules/$.iter-define")(C, NAME, function(iterated, kind) {
+        set(this, ITER, {
+          o: iterated,
+          k: kind
+        });
+      }, function() {
+        var iter = this[ITER],
+            kind = iter.k,
+            entry = iter.l;
+        while (entry && entry.r)
+          entry = entry.p;
+        if (!iter.o || !(iter.l = entry = entry ? entry.n : iter.o[FIRST])) {
+          iter.o = undefined;
+          return step(1);
+        }
+        if (kind == 'keys')
+          return step(0, entry.k);
+        if (kind == 'values')
+          return step(0, entry.v);
+        return step(0, [entry.k, entry.v]);
+      }, IS_MAP ? 'entries' : 'values', !IS_MAP, true);
+    }
+  };
+  global.define = __define;
+  return module.exports;
+});
+
+System.register("npm:core-js@0.9.6/library/modules/$.collection", ["npm:core-js@0.9.6/library/modules/$", "npm:core-js@0.9.6/library/modules/$.def", "npm:core-js@0.9.6/library/modules/$.iter", "npm:core-js@0.9.6/library/modules/$.for-of", "npm:core-js@0.9.6/library/modules/$.species", "npm:core-js@0.9.6/library/modules/$.assert", "npm:core-js@0.9.6/library/modules/$.iter-detect", "npm:core-js@0.9.6/library/modules/$.cof"], true, function(require, exports, module) {
+  var global = System.global,
+      __define = global.define;
+  global.define = undefined;
+  'use strict';
+  var $ = require("npm:core-js@0.9.6/library/modules/$"),
+      $def = require("npm:core-js@0.9.6/library/modules/$.def"),
+      BUGGY = require("npm:core-js@0.9.6/library/modules/$.iter").BUGGY,
+      forOf = require("npm:core-js@0.9.6/library/modules/$.for-of"),
+      species = require("npm:core-js@0.9.6/library/modules/$.species"),
+      assertInstance = require("npm:core-js@0.9.6/library/modules/$.assert").inst;
+  module.exports = function(NAME, methods, common, IS_MAP, IS_WEAK) {
+    var Base = $.g[NAME],
+        C = Base,
+        ADDER = IS_MAP ? 'set' : 'add',
+        proto = C && C.prototype,
+        O = {};
+    function fixMethod(KEY, CHAIN) {
+      var method = proto[KEY];
+      if ($.FW)
+        proto[KEY] = function(a, b) {
+          var result = method.call(this, a === 0 ? 0 : a, b);
+          return CHAIN ? this : result;
+        };
+    }
+    if (!$.isFunction(C) || !(IS_WEAK || !BUGGY && proto.forEach && proto.entries)) {
+      C = common.getConstructor(NAME, IS_MAP, ADDER);
+      $.mix(C.prototype, methods);
+    } else {
+      var inst = new C,
+          chain = inst[ADDER](IS_WEAK ? {} : -0, 1),
+          buggyZero;
+      if (!require("npm:core-js@0.9.6/library/modules/$.iter-detect")(function(iter) {
+        new C(iter);
+      })) {
+        C = function() {
+          assertInstance(this, C, NAME);
+          var that = new Base,
+              iterable = arguments[0];
+          if (iterable != undefined)
+            forOf(iterable, IS_MAP, that[ADDER], that);
+          return that;
+        };
+        C.prototype = proto;
+        if ($.FW)
+          proto.constructor = C;
+      }
+      IS_WEAK || inst.forEach(function(val, key) {
+        buggyZero = 1 / key === -Infinity;
+      });
+      if (buggyZero) {
+        fixMethod('delete');
+        fixMethod('has');
+        IS_MAP && fixMethod('get');
+      }
+      if (buggyZero || chain !== inst)
+        fixMethod(ADDER, true);
+    }
+    require("npm:core-js@0.9.6/library/modules/$.cof").set(C, NAME);
+    O[NAME] = C;
+    $def($def.G + $def.W + $def.F * (C != Base), O);
+    species(C);
+    species($.core[NAME]);
+    if (!IS_WEAK)
+      common.setIter(C, NAME, IS_MAP);
+    return C;
+  };
+  global.define = __define;
+  return module.exports;
+});
+
+System.register("npm:core-js@0.9.6/library/modules/$.collection-to-json", ["npm:core-js@0.9.6/library/modules/$.def", "npm:core-js@0.9.6/library/modules/$.for-of"], true, function(require, exports, module) {
+  var global = System.global,
+      __define = global.define;
+  global.define = undefined;
+  var $def = require("npm:core-js@0.9.6/library/modules/$.def"),
+      forOf = require("npm:core-js@0.9.6/library/modules/$.for-of");
+  module.exports = function(NAME) {
+    $def($def.P, NAME, {toJSON: function toJSON() {
+        var arr = [];
+        forOf(this, false, arr.push, arr);
+        return arr;
+      }});
   };
   global.define = __define;
   return module.exports;
@@ -6164,73 +6398,30 @@ System.register("npm:core-js@0.9.6/library/modules/$.for-of", ["npm:core-js@0.9.
   return module.exports;
 });
 
-System.register("npm:core-js@0.9.6/library/modules/$.collection", ["npm:core-js@0.9.6/library/modules/$", "npm:core-js@0.9.6/library/modules/$.def", "npm:core-js@0.9.6/library/modules/$.iter", "npm:core-js@0.9.6/library/modules/$.for-of", "npm:core-js@0.9.6/library/modules/$.species", "npm:core-js@0.9.6/library/modules/$.assert", "npm:core-js@0.9.6/library/modules/$.iter-detect", "npm:core-js@0.9.6/library/modules/$.cof"], true, function(require, exports, module) {
+System.register("npm:process@0.10.1", ["npm:process@0.10.1/browser"], true, function(require, exports, module) {
+  var global = System.global,
+      __define = global.define;
+  global.define = undefined;
+  module.exports = require("npm:process@0.10.1/browser");
+  global.define = __define;
+  return module.exports;
+});
+
+System.register("npm:core-js@0.9.6/library/modules/es6.map", ["npm:core-js@0.9.6/library/modules/$.collection-strong", "npm:core-js@0.9.6/library/modules/$.collection"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
   'use strict';
-  var $ = require("npm:core-js@0.9.6/library/modules/$"),
-      $def = require("npm:core-js@0.9.6/library/modules/$.def"),
-      BUGGY = require("npm:core-js@0.9.6/library/modules/$.iter").BUGGY,
-      forOf = require("npm:core-js@0.9.6/library/modules/$.for-of"),
-      species = require("npm:core-js@0.9.6/library/modules/$.species"),
-      assertInstance = require("npm:core-js@0.9.6/library/modules/$.assert").inst;
-  module.exports = function(NAME, methods, common, IS_MAP, IS_WEAK) {
-    var Base = $.g[NAME],
-        C = Base,
-        ADDER = IS_MAP ? 'set' : 'add',
-        proto = C && C.prototype,
-        O = {};
-    function fixMethod(KEY, CHAIN) {
-      var method = proto[KEY];
-      if ($.FW)
-        proto[KEY] = function(a, b) {
-          var result = method.call(this, a === 0 ? 0 : a, b);
-          return CHAIN ? this : result;
-        };
+  var strong = require("npm:core-js@0.9.6/library/modules/$.collection-strong");
+  require("npm:core-js@0.9.6/library/modules/$.collection")('Map', {
+    get: function get(key) {
+      var entry = strong.getEntry(this, key);
+      return entry && entry.v;
+    },
+    set: function set(key, value) {
+      return strong.def(this, key === 0 ? 0 : key, value);
     }
-    if (!$.isFunction(C) || !(IS_WEAK || !BUGGY && proto.forEach && proto.entries)) {
-      C = common.getConstructor(NAME, IS_MAP, ADDER);
-      $.mix(C.prototype, methods);
-    } else {
-      var inst = new C,
-          chain = inst[ADDER](IS_WEAK ? {} : -0, 1),
-          buggyZero;
-      if (!require("npm:core-js@0.9.6/library/modules/$.iter-detect")(function(iter) {
-        new C(iter);
-      })) {
-        C = function() {
-          assertInstance(this, C, NAME);
-          var that = new Base,
-              iterable = arguments[0];
-          if (iterable != undefined)
-            forOf(iterable, IS_MAP, that[ADDER], that);
-          return that;
-        };
-        C.prototype = proto;
-        if ($.FW)
-          proto.constructor = C;
-      }
-      IS_WEAK || inst.forEach(function(val, key) {
-        buggyZero = 1 / key === -Infinity;
-      });
-      if (buggyZero) {
-        fixMethod('delete');
-        fixMethod('has');
-        IS_MAP && fixMethod('get');
-      }
-      if (buggyZero || chain !== inst)
-        fixMethod(ADDER, true);
-    }
-    require("npm:core-js@0.9.6/library/modules/$.cof").set(C, NAME);
-    O[NAME] = C;
-    $def($def.G + $def.W + $def.F * (C != Base), O);
-    species(C);
-    species($.core[NAME]);
-    if (!IS_WEAK)
-      common.setIter(C, NAME, IS_MAP);
-    return C;
-  };
+  }, strong, true);
   global.define = __define;
   return module.exports;
 });
@@ -6240,15 +6431,6 @@ System.register("npm:core-js@0.9.6/library/modules/es7.map.to-json", ["npm:core-
       __define = global.define;
   global.define = undefined;
   require("npm:core-js@0.9.6/library/modules/$.collection-to-json")('Map');
-  global.define = __define;
-  return module.exports;
-});
-
-System.register("npm:process@0.10.1", ["npm:process@0.10.1/browser"], true, function(require, exports, module) {
-  var global = System.global,
-      __define = global.define;
-  global.define = undefined;
-  module.exports = require("npm:process@0.10.1/browser");
   global.define = __define;
   return module.exports;
 });
@@ -7572,174 +7754,25 @@ System.register("npm:core-js@0.9.6/library/modules/web.dom.iterable", ["npm:core
   return module.exports;
 });
 
-System.register("npm:core-js@0.9.6/library/modules/$.collection-strong", ["npm:core-js@0.9.6/library/modules/$", "npm:core-js@0.9.6/library/modules/$.ctx", "npm:core-js@0.9.6/library/modules/$.uid", "npm:core-js@0.9.6/library/modules/$.assert", "npm:core-js@0.9.6/library/modules/$.for-of", "npm:core-js@0.9.6/library/modules/$.iter", "npm:core-js@0.9.6/library/modules/$.iter-define"], true, function(require, exports, module) {
-  var global = System.global,
-      __define = global.define;
-  global.define = undefined;
-  'use strict';
-  var $ = require("npm:core-js@0.9.6/library/modules/$"),
-      ctx = require("npm:core-js@0.9.6/library/modules/$.ctx"),
-      safe = require("npm:core-js@0.9.6/library/modules/$.uid").safe,
-      assert = require("npm:core-js@0.9.6/library/modules/$.assert"),
-      forOf = require("npm:core-js@0.9.6/library/modules/$.for-of"),
-      step = require("npm:core-js@0.9.6/library/modules/$.iter").step,
-      has = $.has,
-      set = $.set,
-      isObject = $.isObject,
-      hide = $.hide,
-      isFrozen = Object.isFrozen || $.core.Object.isFrozen,
-      ID = safe('id'),
-      O1 = safe('O1'),
-      LAST = safe('last'),
-      FIRST = safe('first'),
-      ITER = safe('iter'),
-      SIZE = $.DESC ? safe('size') : 'size',
-      id = 0;
-  function fastKey(it, create) {
-    if (!isObject(it))
-      return (typeof it == 'string' ? 'S' : 'P') + it;
-    if (isFrozen(it))
-      return 'F';
-    if (!has(it, ID)) {
-      if (!create)
-        return 'E';
-      hide(it, ID, ++id);
-    }
-    return 'O' + it[ID];
-  }
-  function getEntry(that, key) {
-    var index = fastKey(key),
-        entry;
-    if (index != 'F')
-      return that[O1][index];
-    for (entry = that[FIRST]; entry; entry = entry.n) {
-      if (entry.k == key)
-        return entry;
-    }
-  }
-  module.exports = {
-    getConstructor: function(NAME, IS_MAP, ADDER) {
-      function C() {
-        var that = assert.inst(this, C, NAME),
-            iterable = arguments[0];
-        set(that, O1, $.create(null));
-        set(that, SIZE, 0);
-        set(that, LAST, undefined);
-        set(that, FIRST, undefined);
-        if (iterable != undefined)
-          forOf(iterable, IS_MAP, that[ADDER], that);
-      }
-      $.mix(C.prototype, {
-        clear: function clear() {
-          for (var that = this,
-              data = that[O1],
-              entry = that[FIRST]; entry; entry = entry.n) {
-            entry.r = true;
-            if (entry.p)
-              entry.p = entry.p.n = undefined;
-            delete data[entry.i];
-          }
-          that[FIRST] = that[LAST] = undefined;
-          that[SIZE] = 0;
-        },
-        'delete': function(key) {
-          var that = this,
-              entry = getEntry(that, key);
-          if (entry) {
-            var next = entry.n,
-                prev = entry.p;
-            delete that[O1][entry.i];
-            entry.r = true;
-            if (prev)
-              prev.n = next;
-            if (next)
-              next.p = prev;
-            if (that[FIRST] == entry)
-              that[FIRST] = next;
-            if (that[LAST] == entry)
-              that[LAST] = prev;
-            that[SIZE]--;
-          }
-          return !!entry;
-        },
-        forEach: function forEach(callbackfn) {
-          var f = ctx(callbackfn, arguments[1], 3),
-              entry;
-          while (entry = entry ? entry.n : this[FIRST]) {
-            f(entry.v, entry.k, this);
-            while (entry && entry.r)
-              entry = entry.p;
-          }
-        },
-        has: function has(key) {
-          return !!getEntry(this, key);
-        }
-      });
-      if ($.DESC)
-        $.setDesc(C.prototype, 'size', {get: function() {
-            return assert.def(this[SIZE]);
-          }});
-      return C;
-    },
-    def: function(that, key, value) {
-      var entry = getEntry(that, key),
-          prev,
-          index;
-      if (entry) {
-        entry.v = value;
-      } else {
-        that[LAST] = entry = {
-          i: index = fastKey(key, true),
-          k: key,
-          v: value,
-          p: prev = that[LAST],
-          n: undefined,
-          r: false
-        };
-        if (!that[FIRST])
-          that[FIRST] = entry;
-        if (prev)
-          prev.n = entry;
-        that[SIZE]++;
-        if (index != 'F')
-          that[O1][index] = entry;
-      }
-      return that;
-    },
-    getEntry: getEntry,
-    setIter: function(C, NAME, IS_MAP) {
-      require("npm:core-js@0.9.6/library/modules/$.iter-define")(C, NAME, function(iterated, kind) {
-        set(this, ITER, {
-          o: iterated,
-          k: kind
-        });
-      }, function() {
-        var iter = this[ITER],
-            kind = iter.k,
-            entry = iter.l;
-        while (entry && entry.r)
-          entry = entry.p;
-        if (!iter.o || !(iter.l = entry = entry ? entry.n : iter.o[FIRST])) {
-          iter.o = undefined;
-          return step(1);
-        }
-        if (kind == 'keys')
-          return step(0, entry.k);
-        if (kind == 'values')
-          return step(0, entry.v);
-        return step(0, [entry.k, entry.v]);
-      }, IS_MAP ? 'entries' : 'values', !IS_MAP, true);
-    }
-  };
-  global.define = __define;
-  return module.exports;
-});
-
 System.register("github:jspm/nodelibs-process@0.1.1/index", ["npm:process@0.10.1"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
   module.exports = System._nodeRequire ? process : require("npm:process@0.10.1");
+  global.define = __define;
+  return module.exports;
+});
+
+System.register("npm:core-js@0.9.6/library/fn/map", ["npm:core-js@0.9.6/library/modules/es6.object.to-string", "npm:core-js@0.9.6/library/modules/es6.string.iterator", "npm:core-js@0.9.6/library/modules/web.dom.iterable", "npm:core-js@0.9.6/library/modules/es6.map", "npm:core-js@0.9.6/library/modules/es7.map.to-json", "npm:core-js@0.9.6/library/modules/$"], true, function(require, exports, module) {
+  var global = System.global,
+      __define = global.define;
+  global.define = undefined;
+  require("npm:core-js@0.9.6/library/modules/es6.object.to-string");
+  require("npm:core-js@0.9.6/library/modules/es6.string.iterator");
+  require("npm:core-js@0.9.6/library/modules/web.dom.iterable");
+  require("npm:core-js@0.9.6/library/modules/es6.map");
+  require("npm:core-js@0.9.6/library/modules/es7.map.to-json");
+  module.exports = require("npm:core-js@0.9.6/library/modules/$").core.Map;
   global.define = __define;
   return module.exports;
 });
@@ -8088,30 +8121,23 @@ System.register("npm:core-js@0.9.6/library/modules/es6.object.to-string", ["npm:
   return module.exports;
 });
 
-System.register("npm:core-js@0.9.6/library/modules/es6.map", ["npm:core-js@0.9.6/library/modules/$.collection-strong", "npm:core-js@0.9.6/library/modules/$.collection"], true, function(require, exports, module) {
-  var global = System.global,
-      __define = global.define;
-  global.define = undefined;
-  'use strict';
-  var strong = require("npm:core-js@0.9.6/library/modules/$.collection-strong");
-  require("npm:core-js@0.9.6/library/modules/$.collection")('Map', {
-    get: function get(key) {
-      var entry = strong.getEntry(this, key);
-      return entry && entry.v;
-    },
-    set: function set(key, value) {
-      return strong.def(this, key === 0 ? 0 : key, value);
-    }
-  }, strong, true);
-  global.define = __define;
-  return module.exports;
-});
-
 System.register("github:jspm/nodelibs-process@0.1.1", ["github:jspm/nodelibs-process@0.1.1/index"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
   module.exports = require("github:jspm/nodelibs-process@0.1.1/index");
+  global.define = __define;
+  return module.exports;
+});
+
+System.register("npm:babel-runtime@5.2.9/core-js/map", ["npm:core-js@0.9.6/library/fn/map"], true, function(require, exports, module) {
+  var global = System.global,
+      __define = global.define;
+  global.define = undefined;
+  module.exports = {
+    "default": require("npm:core-js@0.9.6/library/fn/map"),
+    __esModule: true
+  };
   global.define = __define;
   return module.exports;
 });
@@ -8458,20 +8484,6 @@ System.register("npm:babel-runtime@5.2.9/helpers/create-class", ["npm:babel-runt
   return module.exports;
 });
 
-System.register("npm:core-js@0.9.6/library/fn/map", ["npm:core-js@0.9.6/library/modules/es6.object.to-string", "npm:core-js@0.9.6/library/modules/es6.string.iterator", "npm:core-js@0.9.6/library/modules/web.dom.iterable", "npm:core-js@0.9.6/library/modules/es6.map", "npm:core-js@0.9.6/library/modules/es7.map.to-json", "npm:core-js@0.9.6/library/modules/$"], true, function(require, exports, module) {
-  var global = System.global,
-      __define = global.define;
-  global.define = undefined;
-  require("npm:core-js@0.9.6/library/modules/es6.object.to-string");
-  require("npm:core-js@0.9.6/library/modules/es6.string.iterator");
-  require("npm:core-js@0.9.6/library/modules/web.dom.iterable");
-  require("npm:core-js@0.9.6/library/modules/es6.map");
-  require("npm:core-js@0.9.6/library/modules/es7.map.to-json");
-  module.exports = require("npm:core-js@0.9.6/library/modules/$").core.Map;
-  global.define = __define;
-  return module.exports;
-});
-
 System.register("npm:core-js@0.9.6/library/modules/$.task", ["npm:core-js@0.9.6/library/modules/$", "npm:core-js@0.9.6/library/modules/$.ctx", "npm:core-js@0.9.6/library/modules/$.cof", "npm:core-js@0.9.6/library/modules/$.invoke", "npm:core-js@0.9.6/library/modules/$.dom-create", "github:jspm/nodelibs-process@0.1.1"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
@@ -8672,18 +8684,6 @@ System.register("npm:babel-runtime@5.2.9/core-js/symbol", ["npm:core-js@0.9.6/li
   global.define = undefined;
   module.exports = {
     "default": require("npm:core-js@0.9.6/library/fn/symbol"),
-    __esModule: true
-  };
-  global.define = __define;
-  return module.exports;
-});
-
-System.register("npm:babel-runtime@5.2.9/core-js/map", ["npm:core-js@0.9.6/library/fn/map"], true, function(require, exports, module) {
-  var global = System.global,
-      __define = global.define;
-  global.define = undefined;
-  module.exports = {
-    "default": require("npm:core-js@0.9.6/library/fn/map"),
     __esModule: true
   };
   global.define = __define;
@@ -11505,14 +11505,16 @@ System.register('src/esb-mark', ['npm:babel-runtime@5.2.9/helpers/create-class',
 		}
 	};
 });
-System.register('src/esb-config', ['npm:babel-runtime@5.2.9/helpers/create-class', 'npm:babel-runtime@5.2.9/helpers/class-call-check', 'npm:babel-runtime@5.2.9/core-js/map'], function (_export) {
-  var _createClass, _classCallCheck, _Map, EsbConfig;
+System.register('src/esb-config', ['npm:babel-runtime@5.2.9/helpers/create-class', 'npm:babel-runtime@5.2.9/helpers/class-call-check', 'npm:babel-runtime@5.2.9/core-js/promise', 'npm:babel-runtime@5.2.9/core-js/map'], function (_export) {
+  var _createClass, _classCallCheck, _Promise, _Map, EsbConfig;
 
   return {
     setters: [function (_npmBabelRuntime529HelpersCreateClass) {
       _createClass = _npmBabelRuntime529HelpersCreateClass['default'];
     }, function (_npmBabelRuntime529HelpersClassCallCheck) {
       _classCallCheck = _npmBabelRuntime529HelpersClassCallCheck['default'];
+    }, function (_npmBabelRuntime529CoreJsPromise) {
+      _Promise = _npmBabelRuntime529CoreJsPromise['default'];
     }, function (_npmBabelRuntime529CoreJsMap) {
       _Map = _npmBabelRuntime529CoreJsMap['default'];
     }],
@@ -11543,8 +11545,9 @@ System.register('src/esb-config', ['npm:babel-runtime@5.2.9/helpers/create-class
 
             self.setDefaults(); //reset config when a new url is loaded
 
-            // Don't try to load a config file, just start with an empty object
-            return {};
+            return new _Promise(function (resolve, reject) {
+              resolve({});
+            });
           }
         }, {
           key: 'merge',

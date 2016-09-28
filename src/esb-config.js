@@ -17,8 +17,9 @@ class EsbConfig {
 
     self.setDefaults(); //reset config when a new url is loaded
 
-    // Don't try to load a config file, just start with an empty object
-    return {};
+    return new Promise(function(resolve, reject) {
+      resolve({});
+    });
   }
 
   merge(data) {
