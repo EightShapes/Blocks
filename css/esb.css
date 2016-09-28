@@ -93,9 +93,10 @@
   .esb-frame-device-annotation svg {
     fill: #999; }
   .esb-frame-caption + .esb-frame-dimensions-annotation,
-  .esb-frame-title + .esb-frame-dimensions-annotation,
-  .esb-frame-caption + .esb-frame-device-annotation,
-  .esb-frame-title + .esb-frame-device-annotation {
+  .esb-frame-title + .esb-frame-dimensions-annotation, .esb-frame-caption +
+  .esb-frame-device-annotation,
+  .esb-frame-title +
+  .esb-frame-device-annotation {
     padding-top: 0; }
 
 .esb-frame-device-annotation + .esb-frame-dimensions-annotation {
