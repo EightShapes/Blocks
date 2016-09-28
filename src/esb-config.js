@@ -17,46 +17,8 @@ class EsbConfig {
 
     self.setDefaults(); //reset config when a new url is loaded
 
-    return new Promise(function(resolve, reject) {
-      uri = url || self.url;
-      req = new XMLHttpRequest();
-
-      uri = uri + '?timestamp=' + new Date().getTime(); //prevent ajax caching of the config
-
-      req.open('GET', uri);
-
-      req.onload = function() {
-        if (req.status === 200 || req.readyState === 4) {
-          try{
-            data = JSON.parse(req.response);
-          }catch(e){
-            //If no valid JSON Config is found, set config to an empty object and log the message
-            window.console.log('info', 'No valid JSON config found at: ' + uri + ', setting config to be an empty {}');
-            data = {};
-          }
-
-          self.merge(data);
-          self.setLoggingLevel();
-          if (window.$ !== undefined) {
-            window.$(document).trigger('blocks-config_loaded');
-          }
-          resolve(data);
-        }
-        else {
-          window.console.error('FAILED TO FETCH CONFIG: ' + uri + ' returned ' + JSON.stringify(req.statusText));
-          if (window.$ !== undefined) {
-            window.$(document).trigger('blocks-config_loaded'); // We continue on with default options
-          }
-          resolve(Error(req.statusText)); // Resolve the promise so Blocks can function without a config.json
-        }
-      };
-
-      req.onerror = function() {
-        reject(Error('Network Error'));
-      };
-
-      req.send();
-    });
+    // Don't try to load a config file, just start with an empty object
+    return {};
   }
 
   merge(data) {
