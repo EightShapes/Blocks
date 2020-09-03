@@ -50,7 +50,7 @@
     "karma-phantomjs-shim": "^1.0.0",
     "karma-safari-launcher": "^0.1.1",
     "load-grunt-tasks": "^3.1.0",
-    "node-sass": "^3.1.2"
+    "node-sass": "^4.14.1"
   },
   "jspm": {
     "directories": {
